@@ -25,7 +25,7 @@ Each lesson HTML file includes the same tail:
 <script src="../webring.js"></script>
 ```
 
-Paths like `/shared.css` and `/webring.js` assume the server root is this directory (the default for `python3 -m http.server` when run from here).
+Lesson pages load shared assets with relative paths (`../shared.css`, `../webring.js`). Webring navigation resolves config paths from the project root, so links work both locally and on GitHub Pages under a subdirectory.
 
 Every lesson also ends with a dashed **`#lesson-demo`** region and short instructions to practice Chrome’s **Inspect** / Elements panel on that demo.
 

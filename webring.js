@@ -1,9 +1,12 @@
 /**
  * Shared webring snippet for the tutorial ring.
  * Loads page order from webring-config.json next to this script.
+ * Paths in the config are relative to the project root (this script's folder),
+ * so links work when the site is hosted in a subdirectory (e.g. GitHub Pages).
  */
 (function () {
   const scriptEl = document.currentScript;
+  const rootUrl = new URL("./", scriptEl.src);
   const configUrl = new URL("webring-config.json", scriptEl.src).href;
 
   function normalizePath(pathname) {
@@ -20,6 +23,28 @@
     return pathname + "/";
   }
 
+  /** Strip leading ./ or / so config paths resolve from the project root. */
+  function rootRelativePath(path) {
+    return String(path || "").replace(/^\.\//, "").replace(/^\//, "");
+  }
+
+  function absoluteSiteUrl(path) {
+    return new URL(rootRelativePath(path), rootUrl);
+  }
+
+  /**
+   * Href for nav links. Use a path from the domain root (including any GitHub Pages
+   * subdirectory) so the browser replaces the location instead of appending under
+   * the current lesson folder. Shadow DOM relative URLs are easy to resolve wrong.
+   */
+  function siteHref(path) {
+    return absoluteSiteUrl(path).pathname;
+  }
+
+  function indexHref() {
+    return normalizePath(rootUrl.pathname);
+  }
+
   function currentPathPrefix() {
     return normalizePath(window.location.pathname);
   }
@@ -28,7 +53,7 @@
     let best = -1;
     let bestLen = -1;
     for (let i = 0; i < sites.length; i++) {
-      const p = sites[i].path.endsWith("/") ? sites[i].path : sites[i].path + "/";
+      const p = normalizePath(absoluteSiteUrl(sites[i].path).pathname);
       const cur = current.endsWith("/") ? current : current + "/";
       if (cur.startsWith(p) && p.length > bestLen) {
         best = i;
@@ -112,11 +137,11 @@
           `;
 
           this.shadowRoot.getElementById("nav").innerHTML = `
-            <a href="${prev.path}">← Previous</a>
+            <a href="${siteHref(prev.path)}">← Previous</a>
             <span class="muted"> · </span>
-            <a href="/">Index</a>
+            <a href="${indexHref()}">Index</a>
             <span class="muted"> · </span>
-            <a href="${next.path}">Next →</a>
+            <a href="${siteHref(next.path)}">Next →</a>
           `;
         })
         .catch((e) => {
