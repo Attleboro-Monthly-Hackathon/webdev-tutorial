@@ -20,7 +20,7 @@ Each lesson HTML file includes the same tail:
 
 ```html
 <tutorial-webring></tutorial-webring>
-<script src="/webring.js"></script>
+<script src="../webring.js"></script>
 ```
 
 Paths like `/shared.css` and `/webring.js` assume the server root is this directory (the default for `python3 -m http.server` when run from here).
