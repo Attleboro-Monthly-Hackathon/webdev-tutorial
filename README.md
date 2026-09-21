@@ -1,3 +1,5 @@
+Access the website here: https://attleboro-monthly-hackathon.github.io/webdev-tutorial/
+
 # Web dev tutorial webring
 
 Twenty-three separate static “sites” (folders) that teach the web in order: from absolute beginner context (files, text editors, DevTools) through a minimal single-page application served as plain files.
