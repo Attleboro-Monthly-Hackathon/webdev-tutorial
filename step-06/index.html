@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-06">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 6 — Semantic regions</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Semantic HTML</h1>
+    <p class="lead">Tags like <code>header</code>, <code>main</code>, <code>nav</code>, and <code>footer</code> describe roles, not just boxes.</p>
+  </header>
+  <main>
+    <p>This paragraph sits inside <code>main</code> to mark the primary content. A <code>nav</code> block often wraps site menus.</p>
+  </main>
+  <footer>
+    <p>Footers hold secondary links, copyright, or contact info.</p>
+  </footer>
+  <pre>&lt;body&gt;
+  &lt;header&gt;…&lt;/header&gt;
+  &lt;main&gt;…&lt;/main&gt;
+  &lt;footer&gt;…&lt;/footer&gt;
+&lt;/body&gt;</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Semantic regions demo">
+    <header style="padding:0.35rem 0;border-bottom:1px solid #e2e8f0;margin-bottom:0.5rem;">
+      <strong style="font-size:0.85rem;">Demo header</strong>
+    </header>
+    <div class="demo-main" role="region" aria-label="Demo primary content">
+      <p style="margin:0;">Primary story lives in a <code>main</code>-like region (real pages use <code>&lt;main&gt;</code> once).</p>
+    </div>
+    <footer style="margin-top:0.65rem;padding-top:0.35rem;border-top:1px solid #e2e8f0;font-size:0.9rem;color:#64748b;">
+      Demo footer note
+    </footer>
+  </section>
+  <p class="note inspect-hint">Compare the real <code>header</code>/<code>main</code>/<code>footer</code> outside this box with the miniature version inside <code>#lesson-demo</code>—same tags, scoped for practice.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

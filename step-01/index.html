@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-01">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 1 — Almost nothing</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Your first HTML</h1>
+    <p class="lead">Every page is a tree of nested elements. Here you only need a handful.</p>
+  </header>
+  <p>An HTML file is plain text. The browser reads tags such as <code>&lt;p&gt;</code> (paragraph) and shows them as a page.</p>
+  <p>This lesson uses only the document wrapper (<code>html</code>, <code>head</code>, <code>body</code>), a <code>title</code> for the tab, and <code>p</code> for text.</p>
+  <pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Step 1&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Hello, web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+  <p class="note">View source in your browser to see the real tags behind this lesson.</p>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Minimal HTML demo">
+    <p data-demo="hello">Hello, web. This paragraph sits in the dashed frame so Chrome’s Elements tree can focus on it quickly.</p>
+  </section>
+  <p class="note inspect-hint">Open DevTools (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> or <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>I</kbd>, or right‑click → Inspect), expand <code>#lesson-demo</code>, and hover rows in the tree—the matching part of the page flashes on screen.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

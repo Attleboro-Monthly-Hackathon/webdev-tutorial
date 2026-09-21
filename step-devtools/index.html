@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-devtools">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browser developer tools</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Chrome DevTools in five minutes</h1>
+    <p class="lead">Every major browser ships developer tools. These examples say “Chrome,” but Firefox and Edge have the same ideas with slightly different names.</p>
+  </header>
+
+  <h2>Opening the tools</h2>
+  <ul>
+    <li><strong>Inspect a specific thing:</strong> right‑click an element → <strong>Inspect</strong>. DevTools opens focused on that node in the <strong>Elements</strong> tree.</li>
+    <li><strong>Keyboard:</strong> <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (Linux/Windows) or <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>I</kbd> (macOS).</li>
+  </ul>
+
+  <h2>Panels you will use first</h2>
+  <p><strong>Elements</strong> — HTML tree on the left, CSS rules on the right. Toggle properties on and off, edit values, and see changes instantly (until you refresh).</p>
+  <p><strong>Console</strong> — JavaScript logs and errors appear here. Some lessons ask you to read a message after running a script.</p>
+  <p><strong>Network</strong> — Lists every file the page loads. Useful when <code>fetch</code> fails or an image path is wrong.</p>
+  <p><strong>Sources</strong> — Lets you set breakpoints and step through JavaScript. Advanced, but good to know it exists.</p>
+
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="DevTools practice targets">
+    <p style="margin:0 0 0.75rem;color:#0369a1;">This paragraph uses an inline <code>style</code> for color. In Elements, select it and watch the <code>style</code> attribute in the tree.</p>
+    <div data-devtools-target="nested" style="padding:0.5rem 0.75rem;background:#fef3c7;border-radius:6px;border:1px solid #f59e0b;">
+      Nested box — try changing its <code>background</code> in the <strong>Styles</strong> pane.
+    </div>
+  </section>
+  <p class="note inspect-hint">Select the yellow inner box in the Elements tree. In the <strong>Styles</strong> sidebar, click a color swatch next to <code>background</code> and pick another color. This is the fastest way to experiment before you copy values back into your editor.</p>
+
+  <p class="note">Official reference: <a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools documentation</a>.</p>
+
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

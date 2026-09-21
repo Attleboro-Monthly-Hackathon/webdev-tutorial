@@ -1,0 +1,9 @@
+{
+  "lesson": 17,
+  "topic": "fetch",
+  "items": [
+    { "name": "HTML", "role": "structure" },
+    { "name": "CSS", "role": "style" },
+    { "name": "JavaScript", "role": "behavior" }
+  ]
+}

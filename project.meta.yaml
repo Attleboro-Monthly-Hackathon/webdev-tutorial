@@ -1,0 +1,16 @@
+name: web-dev-tutorial-webring
+description: "Sample static-site webring of twenty-three progressive web tutorials: beginner setup (files,\ntext editors, Chrome DevTools), an HTML primer with documentation links, then minimal HTML\nthrough layout, forms, JavaScript, fetch, storage, ES modules, and a tiny hash-routed SPA.\nEach lesson includes a dashed demo region for Inspect/Elements practice. Serve with\n`python3 -m http.server`; navigation uses `webring.js` and `webring-config.json`.\n"
+tags:
+- html
+- css
+- javascript
+- tutorial
+- webring
+- static-site
+language: javascript
+scripts:
+  serve:
+    command: python3 -m http.server 8080
+publishing:
+- target: github-projects
+- target: docs

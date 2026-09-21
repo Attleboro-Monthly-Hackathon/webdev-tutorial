@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-04">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 4 — Images</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Images need alt text</h1>
+    <p class="lead">The <code>img</code> element embeds a picture. <code>alt</code> describes it when the image cannot load or for assistive tech.</p>
+  </header>
+  <p>Local file in this lesson folder—the live image is inside the dashed demo below.</p>
+  <pre>&lt;img src="star.svg" width="72" height="72"
+     alt="Blue four-point star"&gt;</pre>
+  <p class="note">Prefer CSS for sizing in real projects; width/height here reserve space while the file loads.</p>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Image and alt demo">
+    <p><img src="star.svg" width="72" height="72" alt="Blue four-point star"></p>
+  </section>
+  <p class="note inspect-hint">Inspect the <code>&lt;img&gt;</code> inside <code>#lesson-demo</code>. Verify <code>alt</code>, <code>width</code>, and <code>height</code> in the DOM—if the file path breaks, the alt text is what users still hear or see.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

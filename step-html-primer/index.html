@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-html-primer">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML primer</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>HTML building blocks</h1>
+    <p class="lead">HTML describes structure and meaning. Browsers combine it with CSS (appearance) and JavaScript (behavior).</p>
+  </header>
+
+  <h2>Tags, elements, attributes</h2>
+  <p>Most of HTML is written as <strong>tags</strong> in angle brackets. A matching pair wraps content: <code>&lt;p&gt;…&lt;/p&gt;</code> is a paragraph <strong>element</strong>. Some tags stand alone, like <code>&lt;img …&gt;</code>.</p>
+  <p><strong>Attributes</strong> add details: <code>&lt;a href="/step-01/"&gt;Go to lesson 1&lt;/a&gt;</code> uses <code>href</code> to give the link destination. <code>id</code> and <code>class</code> are common hooks for CSS and scripts.</p>
+
+  <h2>Nesting and trees</h2>
+  <p>Elements sit inside other elements, forming a tree. The outer <code>&lt;html&gt;</code> wraps <code>&lt;head&gt;</code> (metadata) and <code>&lt;body&gt;</code> (visible page). Getting nesting wrong—forgetting a closing tag—can confuse the browser’s parser.</p>
+
+  <h2>Everyday elements (preview)</h2>
+  <p>You will practice these in the next lessons: headings (<code>h1</code>–<code>h6</code>), links (<code>a</code>), lists (<code>ul</code>, <code>ol</code>, <code>li</code>), images (<code>img</code>), sections (<code>header</code>, <code>main</code>, <code>footer</code>), and forms (<code>form</code>, <code>input</code>, <code>label</code>).</p>
+
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="HTML primer mini layout">
+    <header style="font-size:0.9rem;margin-bottom:0.5rem;padding-bottom:0.35rem;border-bottom:1px solid #cbd5e1;">
+      <strong>Mini header</strong> inside the demo
+    </header>
+    <main>
+      <p style="margin:0.35rem 0;">Paragraph inside <code>main</code>.</p>
+      <p style="margin:0.35rem 0;"><a href="#lesson-demo">Dummy same-page link</a> for structure practice.</p>
+    </main>
+  </section>
+  <p class="note inspect-hint">Inspect <code>#lesson-demo</code> and expand <code>header</code> and <code>main</code> in the tree. Notice how indentation in DevTools mirrors nesting—same idea as in your editor.</p>
+
+  <div class="doc-links">
+    <h2>Documentation sites (bookmark these)</h2>
+    <ul>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN — HTML</a> (accurate reference and tutorials)</li>
+      <li><a href="https://html.spec.whatwg.org/multipage/">WHATWG HTML Living Standard</a> (authoritative spec)</li>
+      <li><a href="https://web.dev/learn/html/">web.dev — Learn HTML</a> (Google’s structured course)</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN — CSS</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN — JavaScript</a></li>
+      <li><a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a></li>
+    </ul>
+  </div>
+
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

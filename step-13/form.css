@@ -1,0 +1,40 @@
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 22rem;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.card-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+
+.card-form input,
+.card-form textarea {
+  font: inherit;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid #94a3b8;
+}
+
+.card-form button {
+  margin-top: 0.75rem;
+  align-self: flex-start;
+  font: inherit;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-form button:hover {
+  background: #1e40af;
+}

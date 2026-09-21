@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-13">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 13 — Forms</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <header>
+    <h1>Forms collect input</h1>
+    <p class="lead">Pair <code>label</code> with <code>input</code> using <code>for</code>/<code>id</code>. This form does not submit anywhere yet.</p>
+  </header>
+  <p>The interactive form lives in the dashed demo so you can inspect real <code>label</code>/<code>input</code> pairs.</p>
+  <pre>&lt;label for="email"&gt;Email&lt;/label&gt;
+&lt;input id="email" type="email" name="email"&gt;</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Form controls demo">
+    <form class="card-form" action="#" method="get">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+      <label for="msg">Message</label>
+      <textarea id="msg" name="msg" rows="3" placeholder="Hello…"></textarea>
+      <button type="button">Preview (no network)</button>
+    </form>
+  </section>
+  <p class="note inspect-hint">Inspect the <code>&lt;input&gt;</code> nodes inside <code>#lesson-demo</code>—DevTools shows live DOM properties (type, name, placeholder) and highlights the matching <code>&lt;label for="…"&gt;</code> association.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

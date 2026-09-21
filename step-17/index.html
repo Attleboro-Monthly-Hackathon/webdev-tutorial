@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-17">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 17 — fetch and JSON</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Load data with fetch</h1>
+    <p class="lead"><code>fetch</code> returns a Promise. Chain <code>.json()</code> to parse a static JSON file from the same server.</p>
+  </header>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="fetch output demo">
+    <p style="margin:0 0 0.5rem;"><button type="button" id="load">Load sample.json</button></p>
+    <pre id="out" class="code" style="margin:0;">(output appears here)</pre>
+  </section>
+  <p class="note inspect-hint">Click <strong>Load sample.json</strong>, then open the <strong>Network</strong> tab and reload if needed—select the <code>sample.json</code> row to see status, timing, and response preview alongside the DOM output in <code>#out</code>.</p>
+  <script>
+    document.getElementById("load").addEventListener("click", function () {
+      const out = document.getElementById("out");
+      out.textContent = "Loading…";
+      fetch("sample.json")
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (data) {
+          out.textContent = JSON.stringify(data, null, 2);
+        })
+        .catch(function (e) {
+          out.textContent = "Error: " + e.message;
+        });
+    });
+  </script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

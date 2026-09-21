@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-15">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 15 — DOM updates</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Change text from JavaScript</h1>
+    <p class="lead">Grab a node with <code>document.getElementById</code>, then set <code>textContent</code>.</p>
+  </header>
+  <pre>const el = document.getElementById("status");
+el.textContent = "Updated!";</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="DOM update controls">
+    <p id="status">Waiting…</p>
+    <p style="margin:0.5rem 0 0;"><button type="button" id="go">Run</button></p>
+  </section>
+  <p class="note inspect-hint">Click <strong>Run</strong>, then re‑inspect <code>#status</code> inside <code>#lesson-demo</code>—the text node updates even though Elements still shows the same tag name.</p>
+  <script>
+    document.getElementById("go").addEventListener("click", function () {
+      document.getElementById("status").textContent = "The DOM changed without reloading.";
+    });
+  </script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

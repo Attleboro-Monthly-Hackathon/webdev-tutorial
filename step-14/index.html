@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-14">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 14 — First JavaScript</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript runs in the page</h1>
+    <p class="lead">Browsers ship a JS engine. A <code>script</code> tag runs code after the parser reaches it.</p>
+  </header>
+  <p>Open the console: you should see a greeting logged from the tiny script below.</p>
+  <pre>&lt;script&gt;
+  console.log("Hello from the page");
+&lt;/script&gt;</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Script placement demo">
+    <p style="margin:0;">This box marks where the inline <code>&lt;script&gt;</code> sits in the document—inspect it, then scroll to the bottom of <code>&lt;body&gt;</code> in Elements to see the real tag.</p>
+  </section>
+  <p class="note inspect-hint">Open the <strong>Console</strong> tab: you should see <code>Hello from step 14</code>. Keep Elements and Console side by side—errors often mention a line number you can click.</p>
+  <script>
+    console.log("Hello from step 14");
+  </script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

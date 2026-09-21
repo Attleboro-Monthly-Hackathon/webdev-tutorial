@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-02">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 2 — Headings</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Headings outline the page</h1>
+    <p class="lead">Use levels in order: one main <code>h1</code>, then <code>h2</code> for sections, and so on.</p>
+  </header>
+  <h2>Why headings matter</h2>
+  <p>Screen readers and search engines skim your heading tree to understand structure. Avoid skipping levels for no reason.</p>
+  <h2>Example</h2>
+  <pre>&lt;h1&gt;Recipe: bread&lt;/h1&gt;
+&lt;h2&gt;Ingredients&lt;/h2&gt;
+&lt;p&gt;Flour, water, salt, yeast.&lt;/p&gt;
+&lt;h2&gt;Steps&lt;/h2&gt;
+&lt;p&gt;Mix, rise, bake.&lt;/p&gt;</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Heading outline demo">
+    <h2 style="font-size:1.15rem;margin:0 0 0.35rem;">Recipe: bread</h2>
+    <h3 style="font-size:1rem;margin:0.5rem 0 0.25rem;">Ingredients</h3>
+    <p style="margin:0.25rem 0;">Flour, water, salt, yeast.</p>
+    <h3 style="font-size:1rem;margin:0.5rem 0 0.25rem;">Steps</h3>
+    <p style="margin:0.25rem 0;">Mix, rise, bake.</p>
+  </section>
+  <p class="note inspect-hint">Inspect the nested headings inside <code>#lesson-demo</code>. In Elements, confirm the <code>h2</code>/<code>h3</code> order matches what you see—this is the same structure screen readers traverse.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.demo-box {
+  width: 12rem;
+  padding: 1rem;
+  border: 4px solid #334155;
+  margin: 1rem 0;
+  background: #e0f2fe;
+  border-radius: 6px;
+}

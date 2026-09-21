@@ -1,0 +1,5 @@
+{
+  "app": "step-20-spa",
+  "routes": ["/", "/about", "/data"],
+  "message": "Loaded from lesson.json in the same folder as app.js."
+}

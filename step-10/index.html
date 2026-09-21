@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-10">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 10 — Box model</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="boxes.css">
+</head>
+<body>
+  <header>
+    <h1>Box model</h1>
+    <p class="lead">Every element is a rectangle: content, padding, border, margin.</p>
+  </header>
+  <p class="note">Padding adds space inside the border; margin pushes siblings away. The live box sits in the dashed demo below.</p>
+  <pre>.demo-box {
+  width: 12rem;
+  padding: 1rem;
+  border: 4px solid #334155;
+  margin: 1rem 0;
+  background: #e0f2fe;
+}</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Box model demo">
+    <div class="demo-box">Content area</div>
+  </section>
+  <p class="note inspect-hint">Select <code>.demo-box</code> inside <code>#lesson-demo</code>, then open the <strong>Layout</strong> tab (Chrome) or the box diagram in Computed—hover padding, border, and margin to see each ring.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

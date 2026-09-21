@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-19">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 19 — ES modules</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Split code across files</h1>
+    <p class="lead">Use <code>type="module"</code> on the script tag so you can <code>import</code> another file in the same folder.</p>
+  </header>
+  <pre>&lt;script type="module" src="./main.js"&gt;&lt;/script&gt;</pre>
+  <p class="note">Modules defer by default and run after the document is parsed.</p>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="ES module output">
+    <p id="msg">Loading module…</p>
+  </section>
+  <p class="note inspect-hint">Once the text updates, inspect <code>#msg</code> inside <code>#lesson-demo</code>. In <strong>Sources</strong>, open <code>main.js</code> and set a breakpoint on the line that sets the message—reload to watch module execution pause.</p>
+  <script type="module" src="./main.js"></script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

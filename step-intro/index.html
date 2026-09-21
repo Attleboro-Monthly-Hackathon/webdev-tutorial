@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-intro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction — files, editors, and the web</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Start here: what “making a website” actually means</h1>
+    <p class="lead">This ring assumes no prior technical background. You only need a normal computer and patience.</p>
+  </header>
+
+  <h2>Programs and files</h2>
+  <p>Everything you save on your computer is a <strong>file</strong>. A file has a name and usually an extension after a dot, such as <code>notes.txt</code> or <code>vacation.jpg</code>. The extension hints at the kind of data inside.</p>
+  <p>A <strong>folder</strong> (or directory) is a container for files. The tutorial you are reading is a folder of small web “lessons,” each in its own subfolder.</p>
+
+  <h2>Text editor, not a word processor</h2>
+  <p>When you write code or HTML, you use a <strong>text editor</strong>—an app that saves <em>plain text</em>. Plain text means no hidden bold, fonts, or colors in the file itself (only what the markup describes).</p>
+  <p>Word processors like Microsoft Word or Google Docs add their own formatting layers. They are the wrong tool for web files. Good free editors include <strong>Visual Studio Code</strong>, <strong>Zed</strong>, <strong>Kate</strong>, <strong>Notepad++</strong> (Windows), or even the simple “Notepad” on Windows in a pinch.</p>
+  <p>Create a new file, type a few characters, and use “Save as” to name it with an <code>.html</code> extension. Then you can open that file in a browser to see the result.</p>
+
+  <h2>How a browser fits in</h2>
+  <p>A <strong>browser</strong> (Chrome, Firefox, Edge, Safari…) reads your HTML file, builds an internal tree of elements called the <abbr title="Document Object Model">DOM</abbr>, paints the page, and runs JavaScript if you include any. The next lessons add detail; for now, think: <em>editor writes text → browser shows a page</em>.</p>
+
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Friendly starter demo">
+    <p data-lesson="intro-demo"><strong>Demo box.</strong> This sentence is only HTML and text. Later lessons ask you to open Chrome’s Inspect tools on a dashed area like this one.</p>
+  </section>
+  <p class="note inspect-hint">Open Chrome DevTools with <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd> (Linux/Windows) or <kbd>Cmd</kbd>+<kbd>Option</kbd>+<kbd>I</kbd> (macOS), or right‑click this dashed box and choose <strong>Inspect</strong>. In the <strong>Elements</strong> panel, click nodes and watch the page highlight—proof you are looking at the live structure behind the page.</p>
+
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

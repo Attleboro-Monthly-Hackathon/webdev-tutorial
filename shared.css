@@ -1,0 +1,121 @@
+/* Light tutorial chrome shared by static lesson pages */
+:root {
+  color-scheme: light;
+  --bg: #fafbfc;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --accent: #1d4ed8;
+  --code-bg: #f1f5f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 44rem;
+  padding: 1.5rem 1.25rem 3rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+h1 {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  margin: 0 0 0.35rem;
+}
+
+.lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 1.75rem 0 0.5rem;
+}
+
+p {
+  margin: 0.65rem 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+pre,
+.code {
+  background: var(--code-bg);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-left: 3px solid #cbd5e1;
+  padding-left: 0.85rem;
+  margin: 1rem 0;
+}
+
+.devtools-heading {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.5rem;
+}
+
+.lesson-demo {
+  margin: 0 0 0.75rem;
+  padding: 1rem 1.25rem;
+  border: 2px dashed #64748b;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.inspect-hint {
+  margin-top: 0.5rem;
+}
+
+kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.85em;
+  border: 1px solid #cbd5e1;
+  border-bottom-width: 2px;
+  padding: 0.08em 0.4em;
+  border-radius: 4px;
+  background: #f8fafc;
+}
+
+.doc-links {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-radius: 8px;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+}
+
+.doc-links h2 {
+  margin-top: 0;
+}
+
+.doc-links ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.25rem;
+}

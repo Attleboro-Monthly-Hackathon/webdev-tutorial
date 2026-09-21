@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-16">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 16 — Events</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Listening for events</h1>
+    <p class="lead"><code>addEventListener</code> keeps HTML clean and scales better than inline <code>onclick</code>.</p>
+  </header>
+  <pre>btn.addEventListener("click", () =&gt; { … });</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Event listener demo">
+    <p style="margin:0 0 0.5rem;">Counter: <strong id="count">0</strong></p>
+    <p style="margin:0;">
+      <button type="button" id="inc">+1</button>
+      <button type="button" id="dec">−1</button>
+      <button type="button" id="reset">Reset</button>
+    </p>
+  </section>
+  <p class="note inspect-hint">Click the buttons, then inspect <code>#count</code> inside <code>#lesson-demo</code>. In the Console, type <code>getEventListeners($0)</code> after selecting a button to see attached handlers (Chrome).</p>
+  <script>
+    let n = 0;
+    const out = document.getElementById("count");
+    function render() {
+      out.textContent = String(n);
+    }
+    document.getElementById("inc").addEventListener("click", function () {
+      n += 1;
+      render();
+    });
+    document.getElementById("dec").addEventListener("click", function () {
+      n -= 1;
+      render();
+    });
+    document.getElementById("reset").addEventListener("click", function () {
+      n = 0;
+      render();
+    });
+  </script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

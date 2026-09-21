@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-07">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 7 — Inline styles</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Inline CSS</h1>
+    <p class="lead">The <code>style</code> attribute sets CSS on one element. Quick for demos; avoid for whole sites.</p>
+  </header>
+  <p style="color:#b45309;font-weight:700;">This sentence uses an inline style for color and weight.</p>
+  <p>You can also place a <code>&lt;style&gt;</code> block in <code>head</code> for rules that stay on one page.</p>
+  <pre>&lt;p style="color:#b45309;font-weight:700;"&gt;…&lt;/p&gt;</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Inline style demo">
+    <p style="color:#047857;font-weight:600;margin:0;">This line’s color comes only from a <code>style</code> attribute on the paragraph.</p>
+  </section>
+  <p class="note inspect-hint">Select the green sentence in Elements. The Styles pane lists the inline declaration; toggle the checkbox next to <code>color</code> to see the text fall back instantly.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

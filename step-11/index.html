@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-11">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 11 — Flexbox</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+  <header>
+    <h1>Flexbox for rows and columns</h1>
+    <p class="lead">A flex container lines children up on one axis and can space them evenly.</p>
+  </header>
+  <pre>.row {
+  display: flex;
+  gap: 0.5rem;
+}</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Flexbox row demo">
+    <div class="row">
+      <div class="chip">HTML</div>
+      <div class="chip">CSS</div>
+      <div class="chip">JS</div>
+    </div>
+  </section>
+  <p class="note inspect-hint">Inspect the <code>.row</code> flex container inside <code>#lesson-demo</code>. Toggle <code>display:flex</code> in Styles to watch the chips collapse—proof the property drives the layout.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

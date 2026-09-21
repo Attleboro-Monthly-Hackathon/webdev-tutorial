@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-03">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 3 — Links</title>
+  <link rel="stylesheet" href="/shared.css">
+</head>
+<body>
+  <header>
+    <h1>Hyperlinks tie the web together</h1>
+    <p class="lead">The <code>a</code> (anchor) element uses <code>href</code> to point somewhere else.</p>
+  </header>
+  <p>Paths can be absolute from the site root (<code>/step-02/</code>) or relative (<code>../step-04/</code>).</p>
+  <p>Jump to the previous lesson: <a href="/step-02/">Headings</a>, or forward to <a href="/step-04/">images</a>.</p>
+  <pre>&lt;a href="/step-02/"&gt;Headings&lt;/a&gt;</pre>
+  <p class="note">Use descriptive link text (“Read the ingredients”) instead of “click here”.</p>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Link markup demo">
+    <p style="margin:0;">Jump inside the box: <a href="/step-02/">Headings lesson</a> · <a href="/step-04/">Images lesson</a></p>
+  </section>
+  <p class="note inspect-hint">Select an <code>&lt;a&gt;</code> node inside <code>#lesson-demo</code> and read the <code>href</code> attribute in the DOM—DevTools shows the exact URL the browser will use.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

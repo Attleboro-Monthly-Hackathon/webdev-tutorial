@@ -1,0 +1,16 @@
+.card {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0;
+  background: #fff;
+}
+
+.card-warm {
+  background: #fff7ed;
+}
+
+#note-target {
+  border-left: 4px solid #6366f1;
+  padding-left: 0.75rem;
+}

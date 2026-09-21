@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-20">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 20 — Single-page app</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Micro SPA</h1>
+    <p class="lead">One HTML shell; JavaScript swaps views when the hash changes—no full page reload.</p>
+    <nav class="tabs" aria-label="Primary">
+      <a href="#/">Home</a>
+      <a href="#/about">About</a>
+      <a href="#/data">Data</a>
+    </nav>
+  </header>
+  <main id="app" class="app-main" tabindex="-1"></main>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="SPA shell notes">
+    <p style="margin:0;">Use the tabs in the header, then inspect <code>#app</code> (above). Each hash route injects different markup—watch the child list change in Elements while the URL fragment updates.</p>
+  </section>
+  <p class="note inspect-hint">Select <code>main#app</code> in the tree, click between <strong>Home / About / Data</strong>, and observe how only the subtree under <code>#app</code> swaps—classic SPA pattern.</p>
+  <script src="app.js"></script>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

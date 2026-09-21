@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-12">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 12 — CSS Grid</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+  <header>
+    <h1>Grid layouts</h1>
+    <p class="lead"><code>display: grid</code> divides space into tracks on two axes at once.</p>
+  </header>
+  <pre>.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="CSS Grid demo">
+    <div class="grid">
+      <div class="cell a">A</div>
+      <div class="cell b">B</div>
+      <div class="cell c">C</div>
+      <div class="cell d">D</div>
+    </div>
+  </section>
+  <p class="note inspect-hint">Inspect <code>.grid</code> inside <code>#lesson-demo</code>. In the Layout grid overlay (Chrome), enable the grid badge to see track lines while you tweak <code>gap</code> in Styles.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

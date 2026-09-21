@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-webring-id="step-09">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Step 9 — Classes and IDs</title>
+  <link rel="stylesheet" href="/shared.css">
+  <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+  <header>
+    <h1>Selectors</h1>
+    <p class="lead">Classes (<code>.card</code>) repeat; IDs (<code>#main</code>) should be unique on a page.</p>
+  </header>
+  <p id="note-target">Example paragraph with an id for anchors (<code>#note-target</code>)—inspect it, then compare with the cards in the dashed demo.</p>
+  <pre>.card { border: 1px solid #cbd5e1; padding: 0.75rem; }
+.card-warm { background: #fff7ed; }</pre>
+  <h2 class="devtools-heading">Inspect this demo</h2>
+  <section id="lesson-demo" class="lesson-demo" aria-label="Selectors demo">
+    <div class="card" style="margin-bottom:0.5rem;">Card A — shared <code>.card</code></div>
+    <div class="card card-warm">Card B — extra <code>.card-warm</code></div>
+  </section>
+  <p class="note inspect-hint">Inspect each card in <code>#lesson-demo</code> and watch how both share base rules while the warm background comes from the second class—DevTools shows merged selectors clearly.</p>
+  <tutorial-webring></tutorial-webring>
+  <script src="/webring.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.app-header .tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.app-header .tabs a {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  color: #1d4ed8;
+}
+
+.app-header .tabs a:hover {
+  border-color: #1d4ed8;
+}
+
+.app-main {
+  min-height: 8rem;
+  padding: 1rem 0;
+}
+
+.app-main h2 {
+  margin-top: 0;
+}
+
+.pill {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  background: #e0f2fe;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #075985;
+}

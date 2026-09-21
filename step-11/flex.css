@@ -1,0 +1,16 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.chip {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: #ede9fe;
+  border: 1px solid #7c3aed;
+  color: #4c1d95;
+  font-weight: 600;
+  font-size: 0.9rem;
+}

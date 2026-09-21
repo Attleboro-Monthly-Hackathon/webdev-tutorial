@@ -1,0 +1,32 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.cell {
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.cell.a {
+  background: #fecdd3;
+}
+
+.cell.b {
+  background: #bfdbfe;
+}
+
+.cell.c {
+  background: #bbf7d0;
+}
+
+.cell.d {
+  background: #fde68a;
+}
